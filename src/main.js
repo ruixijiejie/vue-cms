@@ -4,11 +4,19 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 // 1.2 安装路由
 Vue.use(VueRouter)
+// 导入格式化时间的插件
+import moment from 'moment'
+// 定义全局的过滤器
+Vue.filter('dateFormat', function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+    return moment(dataStr).format(pattern)
+})
 
 // 2.1 导入 vue-resource
 import VueResource from 'vue-resource'
 // 2.2 安装 vue-resource
 Vue.use(VueResource)
+// 设置请求的根路径
+Vue.http.options.root = 'http://47.89.21.179:8080';
 // 导入mui样式
 import './lib/mui/css/mui.min.css'
 // 导入扩展图标样式
