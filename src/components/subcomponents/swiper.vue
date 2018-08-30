@@ -30,15 +30,15 @@
         height: 200px;
 
         .mint-swipe-item {
-            &:nth-child(1) {
-                background-color: red;
-            }
-            &:nth-child(2) {
-                background-color: blue;
-            }
-            &:nth-child(3) {
-                background-color: cyan;
-            }
+            /*&:nth-child(1) {*/
+                /*background-color: red;*/
+            /*}*/
+            /*&:nth-child(2) {*/
+                /*background-color: blue;*/
+            /*}*/
+            /*&:nth-child(3) {*/
+                /*background-color: cyan;*/
+            /*}*/
 
             img {
                 width: 100%;

@@ -29,7 +29,7 @@
         data() {
             return {
                id: this.$route.params.id,
-                photoinfo: [],
+                photoinfo: {},
                 list: []  // 缩略图的数组
             }
         },
